@@ -12,7 +12,7 @@ public class HomePage extends BaseClass{
 	@Test
 	public void searchProduct() throws Exception {
 		val.getValidationData();
-		HomePageHelper.searchProduct(driver, "Computer", "matrox",val.getMatroxName(),val.getMatroxPrice());
+		HomePageHelper.searchProduct(driver, "Computer Peripherals", "matrox",val.getMatroxName(),val.getMatroxPrice());
 		HomePageHelper.searchProduct(driver, "Games", "call of duty", val.getGameName(), val.getGamePrice());
 		HomePageHelper.searchProduct(driver, "Software", "microsoft", val.getSoftName(), val.getSoftPrice());
 	}
