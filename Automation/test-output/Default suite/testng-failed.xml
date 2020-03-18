@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.atmecs.automation.testbase.TestBase">
+        <methods>
+          <include name="invokeBrowser"/>
+        </methods>
+      </class> <!-- com.atmecs.automation.testbase.TestBase -->
+      <class name="com.atmecs.automation.testscript.ProductCategoryValidation">
+        <methods>
+          <include name="ValidateBlouse"/>
+          <include name="validateTshirt"/>
+        </methods>
+      </class> <!-- com.atmecs.automation.testscript.ProductCategoryValidation -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
