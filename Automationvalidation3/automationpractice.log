@@ -1,0 +1,56 @@
+[main] INFO  com.atmecs.automation.logger.Loggers  – Browser started
+[main] INFO  com.atmecs.automation.logger.Loggers  – Scenario1 started...
+[main] INFO  com.atmecs.automation.logger.Loggers  – T-shirts Product is Validated
+[main] INFO  com.atmecs.automation.logger.Loggers  – Blouses Product is Validated
+[main] INFO  com.atmecs.automation.logger.Loggers  – Casual Dresses Product is Validated
+[main] INFO  com.atmecs.automation.logger.Loggers  – Evening Dresses Product is Validated
+[main] INFO  com.atmecs.automation.logger.Loggers  – Summer Dresses Product is Validated
+[main] INFO  com.atmecs.automation.logger.Loggers  – Summer Dresses Product is Validated
+[main] INFO  com.atmecs.automation.logger.Loggers  – Summer Dresses Product is Validated
+[main] INFO  com.atmecs.automation.logger.Loggers  – Scenario2 started...
+[main] INFO  com.atmecs.automation.logger.Loggers  – Casual Dresses Product viewed
+[main] INFO  com.atmecs.automation.logger.Loggers  – Casual Dresses Product Updated
+[main] INFO  com.atmecs.automation.logger.Loggers  – Casual Dresses Product Validated
+[main] INFO  com.atmecs.automation.logger.Loggers  – Evening Dresses Product viewed
+[main] INFO  com.atmecs.automation.logger.Loggers  – Evening Dresses Product Updated
+[main] INFO  com.atmecs.automation.logger.Loggers  – Evening Dresses Product Validated
+[main] INFO  com.atmecs.automation.logger.Loggers  – Summer Dresses Product viewed
+[main] INFO  com.atmecs.automation.logger.Loggers  – Summer Dresses Product Updated
+[main] INFO  com.atmecs.automation.logger.Loggers  – Summer Dresses Product Validated
+[main] INFO  com.atmecs.automation.logger.Loggers  – Scenario 4 started...
+[main] INFO  com.atmecs.automation.logger.Loggers  – Feed back validation is done
+[main] INFO  com.atmecs.automation.logger.Loggers  – Browser started
+
+[main] INFO  com.atmecs.automation.logger.Loggers  – Scenario 1 started...
+
+[main] INFO  com.atmecs.automation.logger.Loggers  – T-shirts Product is Validated
+[main] INFO  com.atmecs.automation.logger.Loggers  – Blouses Product is Validated
+[main] INFO  com.atmecs.automation.logger.Loggers  – Casual Dresses Product is Validated
+[main] INFO  com.atmecs.automation.logger.Loggers  – Evening Dresses Product is Validated
+[main] INFO  com.atmecs.automation.logger.Loggers  – Summer Dresses Product is Validated
+[main] INFO  com.atmecs.automation.logger.Loggers  – Summer Dresses Product is Validated
+[main] INFO  com.atmecs.automation.logger.Loggers  – Summer Dresses Product is Validated
+[main] INFO  com.atmecs.automation.logger.Loggers  – Scenario 1 completed...
+
+[main] INFO  com.atmecs.automation.logger.Loggers  – Scenario 2 started...
+
+[main] INFO  com.atmecs.automation.logger.Loggers  – Casual Dresses Product viewed
+[main] INFO  com.atmecs.automation.logger.Loggers  – Casual Dresses Product Updated
+[main] INFO  com.atmecs.automation.logger.Loggers  – Casual Dresses Product Validated
+[main] INFO  com.atmecs.automation.logger.Loggers  – Evening Dresses Product viewed
+[main] INFO  com.atmecs.automation.logger.Loggers  – Evening Dresses Product Updated
+[main] INFO  com.atmecs.automation.logger.Loggers  – Evening Dresses Product Validated
+[main] INFO  com.atmecs.automation.logger.Loggers  – Summer Dresses Product viewed
+[main] INFO  com.atmecs.automation.logger.Loggers  – Summer Dresses Product Updated
+[main] INFO  com.atmecs.automation.logger.Loggers  – Summer Dresses Product Validated
+[main] INFO  com.atmecs.automation.logger.Loggers  – Scenario 2 Completed...
+
+[main] INFO  com.atmecs.automation.logger.Loggers  – Scenario 3 started...
+
+[main] INFO  com.atmecs.automation.logger.Loggers  – Scenario 3 completed...
+
+[main] INFO  com.atmecs.automation.logger.Loggers  – Scenario 4 started...
+
+[main] INFO  com.atmecs.automation.logger.Loggers  – Feed back validation is done
+[main] INFO  com.atmecs.automation.logger.Loggers  – Scenario 4 completed...
+
