@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.atmecs.visitteluride.test.DateSelection"/>
+      <class name="com.atmecs.visitteluride.test.IframeActions"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

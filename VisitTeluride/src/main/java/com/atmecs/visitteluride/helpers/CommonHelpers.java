@@ -5,6 +5,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 
 public class CommonHelpers {
 
@@ -26,5 +27,16 @@ public class CommonHelpers {
 		WebElement element = driver.findElement(By.xpath(xpath));
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView();", element);
+	}
+	
+	public static void dropDown(WebDriver driver, String mainMenu, String subMenu) throws Exception {
+		WebElement element = driver.findElement(By.xpath(mainMenu));
+		Select select = new Select(element);
+		select.selectByVisibleText(subMenu);
+	}
+	
+	public static WebDriver switchToFrame(WebDriver driver,String path) {
+		WebDriver iframe = driver.switchTo().frame(driver.findElement(By.xpath(path)));
+		return iframe;
 	}
 }
