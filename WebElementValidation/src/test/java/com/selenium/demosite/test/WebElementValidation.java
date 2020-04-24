@@ -2,6 +2,7 @@ package com.selenium.demosite.test;
 
 import java.util.Properties;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.Test;
 
 import com.atmecs.demosite.constants.FilePath;
@@ -17,6 +18,8 @@ public class WebElementValidation extends TestBase{
 	public void validateWebElements() throws Exception {
 		path = PropertyReader.readProperties(FilePath.LOCATOR_HOMEPAGE);
 		
+		((JavascriptExecutor)driver).executeScript("window.scrollTo(0,document.body.scrollHeight)")	;
+		
 		CommonHelpers.sendKeys(driver, path.getProperty("loc_firstname"), "Downey");
 		
 		CommonHelpers.sendKeys(driver, path.getProperty("loc_lastname"), "Stark");
@@ -27,6 +30,7 @@ public class WebElementValidation extends TestBase{
 		
 		CommonHelpers.sendKeys(driver, path.getProperty("loc_mobile"), "123456177");
 		
+		
 		CommonHelpers.clickElement(driver, path.getProperty("loc_gender"));
 		
 		CommonHelpers.clickElement(driver, path.getProperty("loc_hobby"));
@@ -34,6 +38,7 @@ public class WebElementValidation extends TestBase{
 		PageActions.dropDown(driver, path.getProperty("loc_skills"), "Java");
 		
 		PageActions.dropDown(driver, path.getProperty("loc_country"), "Albania");
+
 		
 	}
 }

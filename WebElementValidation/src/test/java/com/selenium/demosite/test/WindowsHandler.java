@@ -3,6 +3,7 @@ package com.selenium.demosite.test;
 import java.util.Collection;
 import java.util.Properties;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.Test;
 
 import com.atmecs.demosite.constants.FilePath;
@@ -25,10 +26,10 @@ public class WindowsHandler extends TestBase {
 		
 		for(String handle : windows)
 		{
+			System.out.println(handle.toString());
 		driver.switchTo().window(handle);
 		}
 		driver.close();
-		
 		driver.switchTo().defaultContent();
 	}
 }

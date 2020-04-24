@@ -1,5 +1,8 @@
 package com.atmecs.demosite.helpers;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.util.Collection;
 import java.util.List;
 import java.util.Set;
@@ -36,4 +39,15 @@ public class PageActions {
 		Collection<String> windows = driver.getWindowHandles();
 		return windows;
 	}
+	
+	public static void scrollHeight(WebDriver driver) {
+		((JavascriptExecutor)driver).executeScript("window.scrollTo(0,document.body.scrollHeight)")	;
+	}
+	
+	public static void pageUp() throws Exception {
+		Robot robot = new Robot();
+		robot.keyPress(KeyEvent.VK_PAGE_UP);
+		robot.keyRelease(KeyEvent.VK_PAGE_UP);
+	}
+	
 }
