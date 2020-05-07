@@ -14,12 +14,11 @@ import com.atmecs.practo.utils.PropertyReader;
 public class Login extends TestBase {
 
 	@Test
-	@Parameters({ "userEmail", "password" })
-	public void login(String userEmail, String password) throws IOException {
+	public void login() throws IOException {
 		Properties path = PropertyReader.readProperty(FilePath.LOCATOR_FILE);
 
 		LoginPage.navigateToLogin(driver, path.getProperty("dropdown"), path.getProperty("login"));
-		LoginPage.login(driver, path.getProperty("email"), path.getProperty("password"), userEmail, password,path.getProperty("loginbtn"));
+		LoginPage.login(driver, path.getProperty("email"), path.getProperty("password"), "demo1user1@gmail.con", "123456",path.getProperty("loginbtn"));
 		
 		LoginPage.getCookies(driver);
 
