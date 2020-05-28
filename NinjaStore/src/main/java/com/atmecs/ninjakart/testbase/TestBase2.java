@@ -16,7 +16,7 @@ import com.atmecs.ninjakart.utils.PropertyReader;
 
 public class TestBase2 {
 
-	public static WebDriver driver;
+	public WebDriver driver;
 
 	@BeforeTest
 	@Parameters({ "browser" })
@@ -24,21 +24,21 @@ public class TestBase2 {
 		Properties property = PropertyReader.readProperties(Filepath.CONFIG_FILE);
 		String baseUrl = property.getProperty("Url");
 
-		String nodeURL = "http://192.168.43.135:4444/wd/hub";
+		URL nodeURL = new URL("http://192.168.43.135:4444/wd/hub");
 
 		if (browser.equalsIgnoreCase("Chrome")) {
 			DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 			System.out.println("Chrome Browser Initiated");
 			capabilities.setBrowserName("chrome");
 			capabilities.setPlatform(Platform.WINDOWS);
-			driver = new RemoteWebDriver(new URL(nodeURL),capabilities);
+			driver = new RemoteWebDriver(nodeURL,capabilities);
 		}
 		else  if(browser.equalsIgnoreCase("Firefox")) {
 			DesiredCapabilities capabilities = DesiredCapabilities.firefox();
 			System.out.println("Firefox Browser Initiated");
 			capabilities.setBrowserName("firefox");
 			capabilities.setPlatform(Platform.WINDOWS);
-			driver = new RemoteWebDriver(new URL(nodeURL),capabilities);
+			driver = new RemoteWebDriver(nodeURL,capabilities);
 		}
 		
 		driver.get(baseUrl);

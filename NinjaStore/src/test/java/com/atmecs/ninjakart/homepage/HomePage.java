@@ -12,7 +12,7 @@ import com.atmecs.ninjakart.testbase.TestBase;
 import com.atmecs.ninjakart.testbase.TestBase2;
 import com.atmecs.ninjakart.utils.PropertyReader;
 
-public class HomePage extends TestBase {
+public class HomePage extends TestBase2 {
 
 	Properties path;
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="tests" name="FirefoxTest(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="FirefoxTest(failed)">
     <parameter name="browser" value="Firefox"/>
     <classes>
       <class name="com.atmecs.ninjakart.homepage.HomePage">
@@ -12,4 +12,26 @@
       </class> <!-- com.atmecs.ninjakart.homepage.HomePage -->
     </classes>
   </test> <!-- FirefoxTest(failed) -->
+  <test thread-count="5" name="ChromeTest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.atmecs.ninjakart.homepage.HomePage">
+        <methods>
+          <include name="login"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- com.atmecs.ninjakart.homepage.HomePage -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" name="IETest(failed)">
+    <parameter name="browser" value="IE"/>
+    <classes>
+      <class name="com.atmecs.ninjakart.homepage.HomePage">
+        <methods>
+          <include name="login"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- com.atmecs.ninjakart.homepage.HomePage -->
+    </classes>
+  </test> <!-- IETest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
