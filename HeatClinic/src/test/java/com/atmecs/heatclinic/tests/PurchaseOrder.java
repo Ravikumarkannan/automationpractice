@@ -29,6 +29,14 @@ public class PurchaseOrder extends TestBase {
 		CommonHelpers.clickElement(driver, path.getProperty("loc.loginbtn"));
 	}
 	
+	@Test
+	public void searchProducts() {
+		path = PropertyReader.readProperties(FilePaths.LOCATOR_PURCHASE);
+		
+		CommonHelpers.sendKeys(driver, path.getProperty("loc.search"), "hot");
+		CommonHelpers.clickElement(driver, path.getProperty("loc.searchicon"));
+	}
+	
 	@Test(dependsOnMethods = "login" )
 	public void checkOut() {
 		path = PropertyReader.readProperties(FilePaths.LOCATOR_PURCHASE);
@@ -38,7 +46,10 @@ public class PurchaseOrder extends TestBase {
 		CommonHelpers.clickElement(driver, path.getProperty("loc.product"));
 		driver.switchTo().alert().accept();
 		CommonHelpers.clickElement(driver, path.getProperty("loc.addtocart"));
+		
+		CommonHelpers.explicitWait(driver, path.getProperty("loc.viewcart"));
 		CommonHelpers.clickElement(driver, path.getProperty("loc.viewcart"));
+		
 		CommonHelpers.clickElement(driver, path.getProperty("loc.checkout"));
 	}
 	
