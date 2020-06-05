@@ -6,6 +6,7 @@
   <parameter name="password" value="123456"/>
     <classes>
       <class name="com.atmecs.heatclinic.tests.PurchaseOrder"/>
+      <class name="com.atmecs.heatclinic.tests.PurchaseMerchandice"></class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

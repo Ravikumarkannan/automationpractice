@@ -9,37 +9,33 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num attn">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">26,321</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">54,299</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.atmecs.heatclinic.tests.PurchaseOrder</td><td><a href="#m0">checkOut</a></td><td rowspan="1">1591193768492</td><td rowspan="1">2168</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">com.atmecs.heatclinic.tests.PurchaseOrder</td><td><a href="#m1">enterAddress</a></td><td rowspan="1">1591193770731</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">placeOrder</a></td><td rowspan="1">1591193770748</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.atmecs.heatclinic.tests.PurchaseOrder</td><td><a href="#m3">login</a></td><td rowspan="1">1591193761282</td><td rowspan="1">7190</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.atmecs.heatclinic.tests.PurchaseOrder</td><td><a href="#m0">placeOrder</a></td><td rowspan="1">1591370067018</td><td rowspan="1">665</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.atmecs.heatclinic.tests.PurchaseOrder</td><td><a href="#m1">checkOut</a></td><td rowspan="1">1591370052663</td><td rowspan="1">11053</td></tr><tr class="passedeven"><td><a href="#m2">enterAddress</a></td><td rowspan="1">1591370063726</td><td rowspan="1">3280</td></tr><tr class="passedeven"><td><a href="#m3">login</a></td><td rowspan="1">1591370040200</td><td rowspan="1">7462</td></tr><tr class="passedeven"><td><a href="#m4">searchProducts</a></td><td rowspan="1">1591370047689</td><td rowspan="1">4964</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.atmecs.heatclinic.tests.PurchaseOrder#checkOut</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : _ga=GA1.2.1266212042.1591193756; _gid=GA1.2.2074986589.1591193756; _gat_master=1}
-  (Session info: chrome=83.0.4103.61): _ga=GA1.2.1266212042.1591193756; _gid=GA1.2.2074986589.1591193756; _gat_master=1
+<h2>Test</h2><h3 id="m0">com.atmecs.heatclinic.tests.PurchaseOrder#placeOrder</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LENOVO&apos;, ip: &apos;192.168.43.135&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52528}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 7ab331697facec4fda8da899560a1330
-*** Element info: {Using=xpath, value=//span[text()=&apos;Add to Cart&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59210}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d01e2b589641e840b10646d88a313164
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
 	at com.atmecs.heatclinic.helpers.CommonHelpers.clickElement(CommonHelpers.java:14)
-	at com.atmecs.heatclinic.tests.PurchaseOrder.checkOut(PurchaseOrder.java:38)
+	at com.atmecs.heatclinic.tests.PurchaseOrder.placeOrder(PurchaseOrder.java:74)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.atmecs.heatclinic.tests.PurchaseOrder#enterAddress</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method PurchaseOrder.enterAddress()[pri:0, instance:com.atmecs.heatclinic.tests.PurchaseOrder@1a04f701] depends on not successfully finished methods
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.atmecs.heatclinic.tests.PurchaseOrder#placeOrder</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method PurchaseOrder.placeOrder()[pri:0, instance:com.atmecs.heatclinic.tests.PurchaseOrder@1a04f701] depends on not successfully finished methods
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.atmecs.heatclinic.tests.PurchaseOrder#checkOut</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.atmecs.heatclinic.tests.PurchaseOrder#enterAddress</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">com.atmecs.heatclinic.tests.PurchaseOrder#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>demouser@gmail.com</td><td>123456</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.atmecs.heatclinic.tests.PurchaseOrder#searchProducts</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

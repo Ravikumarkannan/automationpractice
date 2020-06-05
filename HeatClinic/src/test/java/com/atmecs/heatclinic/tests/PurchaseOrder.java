@@ -44,7 +44,7 @@ public class PurchaseOrder extends TestBase {
 		PageActions.scrollDown(driver, path.getProperty("loc.product"));
 		CommonHelpers.explicitWait(driver, path.getProperty("loc.product"));
 		CommonHelpers.clickElement(driver, path.getProperty("loc.product"));
-		driver.switchTo().alert().accept();
+	//	driver.switchTo().alert().accept();
 		CommonHelpers.clickElement(driver, path.getProperty("loc.addtocart"));
 		
 		CommonHelpers.explicitWait(driver, path.getProperty("loc.viewcart"));
