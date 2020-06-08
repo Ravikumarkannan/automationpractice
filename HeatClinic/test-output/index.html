@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                    <span class="method-stats">7 methods, 2 failed,  2 skipped,  3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,10 +102,34 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.atmecs.heatclinic.tests.PurchaseOrder" class="method navigator-link" hash-for-method="placeOrder">placeOrder</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.atmecs.heatclinic.tests.PurchaseOrder" class="method navigator-link" hash-for-method="checkOut">checkOut</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.atmecs.heatclinic.tests.PurchaseOrder" class="method navigator-link" hash-for-method="searchProducts">searchProducts</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.atmecs.heatclinic.tests.PurchaseOrder" class="method navigator-link" hash-for-method="enterAddress">enterAddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.atmecs.heatclinic.tests.PurchaseOrder" class="method navigator-link" hash-for-method="placeOrder">placeOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,12 +140,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.atmecs.heatclinic.tests.PurchaseOrder" class="method navigator-link" hash-for-method="checkOut">checkOut</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.atmecs.heatclinic.tests.PurchaseOrder" class="method navigator-link" hash-for-method="enterAddress">enterAddress</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.atmecs.heatclinic.tests.PurchaseMerchandice" class="method navigator-link" hash-for-method="addProduct">addProduct</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -131,7 +150,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.atmecs.heatclinic.tests.PurchaseOrder" class="method navigator-link" hash-for-method="searchProducts">searchProducts</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.atmecs.heatclinic.tests.PurchaseMerchandice" class="method navigator-link" hash-for-method="modifyProduct">modifyProduct</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -154,17 +173,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="placeOrder">
-                  </a> <!-- placeOrder -->
-                  <span class="method-name">placeOrder</span>
-                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=83.0.4103.61)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+                  <a name="checkOut">
+                  </a> <!-- checkOut -->
+                  <span class="method-name">checkOut</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=83.0.4103.97)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LENOVO&apos;, ip: &apos;192.168.43.135&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59210}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d01e2b589641e840b10646d88a313164
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49834}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 06c04b7b429ec092544b21e7b4ef3d3b
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -174,7 +192,34 @@ Session ID: d01e2b589641e840b10646d88a313164
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
 	at com.atmecs.heatclinic.helpers.CommonHelpers.clickElement(CommonHelpers.java:14)
-	at com.atmecs.heatclinic.tests.PurchaseOrder.placeOrder(PurchaseOrder.java:74)
+	at com.atmecs.heatclinic.tests.PurchaseOrder.checkOut(PurchaseOrder.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchProducts">
+                  </a> <!-- searchProducts -->
+                  <span class="method-name">searchProducts</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 20.000
+  (Session info: chrome=83.0.4103.97)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LENOVO&apos;, ip: &apos;192.168.43.135&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49834}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 06c04b7b429ec092544b21e7b4ef3d3b
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.atmecs.heatclinic.helpers.CommonHelpers.clickElement(CommonHelpers.java:14)
+	at com.atmecs.heatclinic.tests.PurchaseOrder.searchProducts(PurchaseOrder.java:37)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
 ... Removed 32 stack frames
 </div> <!-- stack-trace -->
@@ -182,6 +227,58 @@ Session ID: d01e2b589641e840b10646d88a313164
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.atmecs.heatclinic.tests.PurchaseOrder</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterAddress">
+                  </a> <!-- enterAddress -->
+                  <span class="method-name">enterAddress</span>
+                  <div class="stack-trace">java.lang.Throwable: Method PurchaseOrder.enterAddress()[pri:0, instance:com.atmecs.heatclinic.tests.PurchaseOrder@163e4e87] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="placeOrder">
+                  </a> <!-- placeOrder -->
+                  <span class="method-name">placeOrder</span>
+                  <div class="stack-trace">java.lang.Throwable: Method PurchaseOrder.placeOrder()[pri:0, instance:com.atmecs.heatclinic.tests.PurchaseOrder@163e4e87] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.atmecs.heatclinic.tests.PurchaseMerchandice</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addProduct">
+                  </a> <!-- addProduct -->
+                  <span class="method-name">addProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="modifyProduct">
+                  </a> <!-- modifyProduct -->
+                  <span class="method-name">modifyProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -190,31 +287,10 @@ Session ID: d01e2b589641e840b10646d88a313164
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="checkOut">
-                  </a> <!-- checkOut -->
-                  <span class="method-name">checkOut</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="enterAddress">
-                  </a> <!-- enterAddress -->
-                  <span class="method-name">enterAddress</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="login(demouser@gmail.com, 123456)">
                   </a> <!-- login(demouser@gmail.com, 123456) -->
                   <span class="method-name">login</span>
                   <span class="parameters">(demouser@gmail.com, 123456)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="searchProducts">
-                  </a> <!-- searchProducts -->
-                  <span class="method-name">searchProducts</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -234,6 +310,7 @@ Session ID: d01e2b589641e840b10646d88a313164
     &lt;parameter name=&quot;email&quot; value=&quot;demouser@gmail.com&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.atmecs.heatclinic.tests.PurchaseOrder&quot;/&gt;
+      &lt;class name=&quot;com.atmecs.heatclinic.tests.PurchaseMerchandice&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -247,7 +324,7 @@ Session ID: d01e2b589641e840b10646d88a313164
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -273,32 +350,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'checkOut')
 data.setCell(0, 2, 'com.atmecs.heatclinic.tests.PurchaseOrder')
-data.setCell(0, 3, 11053);
+data.setCell(0, 3, 28246);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'login')
+data.setCell(1, 1, 'searchProducts')
 data.setCell(1, 2, 'com.atmecs.heatclinic.tests.PurchaseOrder')
-data.setCell(1, 3, 7462);
+data.setCell(1, 3, 20895);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'searchProducts')
+data.setCell(2, 1, 'login')
 data.setCell(2, 2, 'com.atmecs.heatclinic.tests.PurchaseOrder')
-data.setCell(2, 3, 4964);
+data.setCell(2, 3, 19305);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'enterAddress')
-data.setCell(3, 2, 'com.atmecs.heatclinic.tests.PurchaseOrder')
-data.setCell(3, 3, 3280);
+data.setCell(3, 1, 'modifyProduct')
+data.setCell(3, 2, 'com.atmecs.heatclinic.tests.PurchaseMerchandice')
+data.setCell(3, 3, 7868);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'placeOrder')
-data.setCell(4, 2, 'com.atmecs.heatclinic.tests.PurchaseOrder')
-data.setCell(4, 3, 665);
+data.setCell(4, 1, 'addProduct')
+data.setCell(4, 2, 'com.atmecs.heatclinic.tests.PurchaseMerchandice')
+data.setCell(4, 3, 4940);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'enterAddress')
+data.setCell(5, 2, 'com.atmecs.heatclinic.tests.PurchaseOrder')
+data.setCell(5, 3, 0);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'placeOrder')
+data.setCell(6, 2, 'com.atmecs.heatclinic.tests.PurchaseOrder')
+data.setCell(6, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 27 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -313,9 +398,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.atmecs.heatclinic.tests.PurchaseMerchandice</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">invokeBrowser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -331,25 +423,38 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">login(demouser@gmail.com, 123456)</span>
-                <span class="method-start">26783 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">searchProducts</span>
-                <span class="method-start">34272 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">checkOut</span>
-                <span class="method-start">39246 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">enterAddress</span>
-                <span class="method-start">50309 ms</span>
+                <span class="method-start">21634 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
+                <span class="method-name">searchProducts</span>
+                <span class="method-start">40975 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkOut</span>
+                <span class="method-start">61926 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterAddress</span>
+                <span class="method-start">90184 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">placeOrder</span>
-                <span class="method-start">53601 ms</span>
+                <span class="method-start">90200 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.atmecs.heatclinic.tests.PurchaseMerchandice</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addProduct</span>
+                <span class="method-start">90208 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">modifyProduct</span>
+                <span class="method-start">95148 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
