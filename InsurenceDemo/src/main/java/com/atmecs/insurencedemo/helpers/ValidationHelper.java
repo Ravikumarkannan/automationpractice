@@ -8,6 +8,7 @@ import org.testng.Assert;
 public class ValidationHelper {
 
 	public static void CheckImage(WebDriver driver, String path) throws Exception {
+		
 		String imgage_attribute = driver.findElement(By.xpath(path)).getAttribute("src");
 
 		Boolean ImagePresent = (Boolean) ((JavascriptExecutor) driver).executeScript(

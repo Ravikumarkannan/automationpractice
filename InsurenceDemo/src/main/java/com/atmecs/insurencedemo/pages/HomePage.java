@@ -22,7 +22,8 @@ public class HomePage {
 	}
 
 	public void linkTextValidtion(WebDriver driver, String expectedData) {
-
+		path = PropertyReader.readProperties(FilePaths.LOCATOR_HOMEPAGE);
+		
 		String link1 = driver.findElement(By.xpath(path.getProperty("loc.linktext1"))).getAttribute("href");
 		
 		try {
@@ -33,6 +34,7 @@ public class HomePage {
 	}
 	
 	public void imageValidation(WebDriver driver) throws Exception {
+		path = PropertyReader.readProperties(FilePaths.LOCATOR_HOMEPAGE);
 		
 		ValidationHelper.CheckImage(driver, path.getProperty("loc.titleimg"));
 	}

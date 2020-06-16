@@ -9,4 +9,6 @@ public class FilePaths {
 	
 	/********Locator Properties**********/
 	public static final String LOCATOR_HOMEPAGE = "./src/test/resources/locators/homepage.properties";
+	
+	public static final String LOCATOR_REGISTER = "./src/test/resources/locators/registerpage.properties";
 }
