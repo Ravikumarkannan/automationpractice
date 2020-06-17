@@ -11,4 +11,6 @@ public class FilePaths {
 	public static final String LOCATOR_HOMEPAGE = "./src/test/resources/locators/homepage.properties";
 	
 	public static final String LOCATOR_REGISTER = "./src/test/resources/locators/registerpage.properties";
+	
+	public static final String LOCATOR_PURCHASE = "./src/test/resources/locators/purchasequote.properties";
 }

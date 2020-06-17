@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -114,6 +114,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.atmecs.insurencedemo.tests.UserRegisteration" class="method navigator-link" hash-for-method="getInfo">getInfo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.atmecs.insurencedemo.tests.UserRegisteration" class="method navigator-link" hash-for-method="register">register</a> <!-- method navigator-link -->
@@ -153,8 +158,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LENOVO&apos;, ip: &apos;192.168.43.135&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60807}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: db55dc317f968f9ca99b4140da1a22fd
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63254}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 616fe613089fedae79e76c052ed560fb
 *** Element info: {Using=xpath, value=//input[@id=&apos;login-form:email&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -181,6 +186,13 @@ Session ID: db55dc317f968f9ca99b4140da1a22fd
               <span class="class-name">com.atmecs.insurencedemo.tests.UserRegisteration</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getInfo">
+                  </a> <!-- getInfo -->
+                  <span class="method-name">getInfo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="register">
@@ -250,24 +262,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validateHomePage')
-data.setCell(0, 2, 'com.atmecs.insurencedemo.tests.HomePageValidation')
-data.setCell(0, 3, 10127);
+data.setCell(0, 1, 'titleValidation')
+data.setCell(0, 2, 'com.atmecs.insurencedemo.tests.UserRegisteration')
+data.setCell(0, 3, 18136);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'titleValidation')
+data.setCell(1, 1, 'register')
 data.setCell(1, 2, 'com.atmecs.insurencedemo.tests.UserRegisteration')
-data.setCell(1, 3, 4022);
+data.setCell(1, 3, 14383);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'register')
-data.setCell(2, 2, 'com.atmecs.insurencedemo.tests.UserRegisteration')
-data.setCell(2, 3, 2042);
+data.setCell(2, 1, 'validateHomePage')
+data.setCell(2, 2, 'com.atmecs.insurencedemo.tests.HomePageValidation')
+data.setCell(2, 3, 10308);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'getInfo')
+data.setCell(3, 2, 'com.atmecs.insurencedemo.tests.UserRegisteration')
+data.setCell(3, 3, 2573);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <span class="suite-total-time">Total running time: 45 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -307,11 +323,15 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">titleValidation</span>
-                <span class="method-start">12520 ms</span>
+                <span class="method-start">19498 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">register</span>
-                <span class="method-start">16605 ms</span>
+                <span class="method-start">37664 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getInfo</span>
+                <span class="method-start">52053 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -320,7 +340,7 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">validateHomePage</span>
-                <span class="method-start">18651 ms</span>
+                <span class="method-start">54630 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
