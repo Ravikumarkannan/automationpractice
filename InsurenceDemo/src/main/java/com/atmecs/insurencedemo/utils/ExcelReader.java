@@ -14,8 +14,8 @@ public class ExcelReader {
 	static XSSFWorkbook workbook;
 	static XSSFSheet sheet;
 
-	public static double readData(String path, int row, int cell) {
-		double value;
+	public static String readData(String path, String sheetName, int row, int cell) {
+		String value = null;
 
 		file = new File(path);
 		try {
@@ -25,8 +25,8 @@ public class ExcelReader {
 		}
 
 		workbook = new XSSFWorkbook();
-		sheet = workbook.getSheetAt(0);
-		value = (int)sheet.getRow(row).getCell(cell).getNumericCellValue();
+		sheet = workbook.getSheet(sheetName);
+		value = sheet.getRow(row).getCell(cell).getStringCellValue();
 
 		return value;
 	}

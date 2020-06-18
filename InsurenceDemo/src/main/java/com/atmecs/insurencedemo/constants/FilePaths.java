@@ -13,4 +13,8 @@ public class FilePaths {
 	public static final String LOCATOR_REGISTER = "./src/test/resources/locators/registerpage.properties";
 	
 	public static final String LOCATOR_PURCHASE = "./src/test/resources/locators/purchasequote.properties";
+	
+	public static final String LOCATOR_FILEUPLOAD = "./src/test/resources/locators/fileuploader.properties";
+	
+	public static final String VALIDATION_PURCHASE = "./src/test/resources/validationdata/purchaseinfo.xlsx";
 }

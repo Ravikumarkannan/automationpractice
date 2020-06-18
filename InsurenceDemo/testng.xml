@@ -3,8 +3,10 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.atmecs.insurencedemo.tests.UserRegisteration"/>
       <class name="com.atmecs.insurencedemo.tests.HomePageValidation"/>
+      <class name="com.atmecs.insurencedemo.tests.PurchaseQuote"/>
+      <class name="com.atmecs.insurencedemo.tests.WindowHandles"/>
+
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

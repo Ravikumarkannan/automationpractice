@@ -9,21 +9,21 @@ public class UserRegisteration extends TestBase {
 
 	RegisterPage register = new RegisterPage();
 
-//	@Test(priority = 1)
+	@Test(priority = 1)
 	public void titleValidation() {
 
 		register.validateTitle(driver, "InsuranceWeb: Sign up");
 
 	}
 
-//	@Test(priority = 2)
+	@Test(priority = 2)
 	public void register() throws Exception {
 
-		register.userRegisteration(driver, "demo", "user", "demomail1@yahoo.com", "demostreet", "paris", "California",
+		register.userRegisteration(driver, "demo", "user", "demomail13@yahoo.com", "demostreet", "paris", "California",
 				"123456", "123456");
 	}
 	
-//	@Test(priority = 3)
+	@Test(priority = 3)
 	public void getInfo() {
 		
 		register.validateInformation(driver);
