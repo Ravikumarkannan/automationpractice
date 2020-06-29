@@ -11,4 +11,6 @@ public class FilePath {
 	/*****WebElement Locator FilePaths*****/
 	
 	public static final String BLOG_PAGE = "./src/test/resources/locator/blogpage.properties";
+	
+	public static final String LOG4J_FILE = "./src/test/resources/log4j/log4j.properties";
 }
