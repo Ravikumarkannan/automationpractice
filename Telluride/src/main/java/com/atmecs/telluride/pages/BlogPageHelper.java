@@ -63,4 +63,11 @@ public class BlogPageHelper {
 			System.out.println(link_list.get(linkCount).getAttribute("href"));
 		}
 	}
+	
+	public void footerValidation(WebDriver driver) {
+		
+		path = PropertyReader.readProperties(FilePath.BLOG_PAGE);
+		
+		List<WebElement> link_list = CommonHelpers.findElements(driver, path.getProperty("loc.footers"));
+	}
 }
