@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">58,454</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.atmecs.insurencedemo.tests.WindowHandles</td><td><a href="#m0">openMultipleWindow</a></td><td rowspan="1">1597067745714</td><td rowspan="1">10311</td></tr><tr class="failedeven"><td><a href="#m1">openMultipleWindow1</a></td><td rowspan="1">1597067775429</td><td rowspan="1">10054</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.atmecs.insurencedemo.tests.HomePageValidation</td><td><a href="#m2">validateHomePage</a></td><td rowspan="1">1597067740604</td><td rowspan="1">1298</td></tr><tr class="passedodd"><td rowspan="5">com.atmecs.insurencedemo.tests.PurchaseQuote</td><td><a href="#m3">enterAutomobileInformation</a></td><td rowspan="1">1597067770405</td><td rowspan="1">5014</td></tr><tr class="passedodd"><td><a href="#m4">enterPersonalInformation</a></td><td rowspan="1">1597067756085</td><td rowspan="1">14272</td></tr><tr class="passedodd"><td><a href="#m5">entervehicleInformation</a></td><td rowspan="1">1597067744313</td><td rowspan="1">1394</td></tr><tr class="passedodd"><td><a href="#m6">purchasQuote</a></td><td rowspan="1">1597067743143</td><td rowspan="1">1167</td></tr><tr class="passedodd"><td><a href="#m7">validInfo</a></td><td rowspan="1">1597067785497</td><td rowspan="1">301</td></tr><tr class="passedeven"><td rowspan="2">com.atmecs.insurencedemo.tests.WindowHandles</td><td><a href="#m8">getParentWindow</a></td><td rowspan="1">1597067770367</td><td rowspan="1">29</td></tr><tr class="passedeven"><td><a href="#m9">navigateToWebservice</a></td><td rowspan="1">1597067741913</td><td rowspan="1">1220</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">com.atmecs.insurencedemo.tests.WindowHandles#openMultipleWindow</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;WSDL1.1&apos;]&quot;}
+  (Session info: chrome=84.0.4147.105)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LENOVO&apos;, ip: &apos;192.168.43.135&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:5989}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 598c2fb222e8182a3b38592395e4da9f
+*** Element info: {Using=xpath, value=//a[text()=&apos;WSDL1.1&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.atmecs.insurencedemo.helpers.CommonHelpers.clickElement(CommonHelpers.java:14)
+	at com.atmecs.insurencedemo.pages.WindowHandler.switchToLinks(WindowHandler.java:28)
+	at com.atmecs.insurencedemo.tests.WindowHandles.openMultipleWindow(WindowHandles.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.atmecs.insurencedemo.tests.WindowHandles#openMultipleWindow1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;WSDL2.0&apos;]&quot;}
+  (Session info: chrome=84.0.4147.105)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LENOVO&apos;, ip: &apos;192.168.43.135&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;13.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:5989}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 598c2fb222e8182a3b38592395e4da9f
+*** Element info: {Using=xpath, value=//a[text()=&apos;WSDL2.0&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.atmecs.insurencedemo.helpers.CommonHelpers.clickElement(CommonHelpers.java:14)
+	at com.atmecs.insurencedemo.pages.WindowHandler.switchToLinks(WindowHandler.java:28)
+	at com.atmecs.insurencedemo.tests.WindowHandles.openMultipleWindow1(WindowHandles.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.atmecs.insurencedemo.tests.HomePageValidation#validateHomePage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.atmecs.insurencedemo.tests.PurchaseQuote#enterAutomobileInformation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.atmecs.insurencedemo.tests.PurchaseQuote#enterPersonalInformation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.atmecs.insurencedemo.tests.PurchaseQuote#entervehicleInformation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.atmecs.insurencedemo.tests.PurchaseQuote#purchasQuote</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.atmecs.insurencedemo.tests.PurchaseQuote#validInfo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.atmecs.insurencedemo.tests.WindowHandles#getParentWindow</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.atmecs.insurencedemo.tests.WindowHandles#navigateToWebservice</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

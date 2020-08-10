@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="12" passed="8" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-08-10T06:55:27 GMT-07:00" name="Suite" finished-at="2020-08-10T06:56:25 GMT-07:00" duration-ms="58454">
+    <groups>
+    </groups>
+    <test started-at="2020-08-10T06:55:27 GMT-07:00" name="Test" finished-at="2020-08-10T06:56:25 GMT-07:00" duration-ms="58454">
+      <class name="com.atmecs.insurencedemo.tests.HomePageValidation">
+        <test-method is-config="true" signature="invokeBrowser()[pri:0, instance:com.atmecs.insurencedemo.tests.HomePageValidation@419c5f1a]" started-at="2020-08-10T06:55:27 GMT-07:00" name="invokeBrowser" finished-at="2020-08-10T06:55:40 GMT-07:00" duration-ms="13177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method signature="validateHomePage()[pri:0, instance:com.atmecs.insurencedemo.tests.HomePageValidation@419c5f1a]" started-at="2020-08-10T06:55:40 GMT-07:00" name="validateHomePage" finished-at="2020-08-10T06:55:41 GMT-07:00" duration-ms="1298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateHomePage -->
+      </class> <!-- com.atmecs.insurencedemo.tests.HomePageValidation -->
+      <class name="com.atmecs.insurencedemo.tests.PurchaseQuote">
+        <test-method signature="purchasQuote()[pri:1, instance:com.atmecs.insurencedemo.tests.PurchaseQuote@12b0404f]" started-at="2020-08-10T06:55:43 GMT-07:00" name="purchasQuote" finished-at="2020-08-10T06:55:44 GMT-07:00" duration-ms="1167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- purchasQuote -->
+        <test-method signature="entervehicleInformation()[pri:2, instance:com.atmecs.insurencedemo.tests.PurchaseQuote@12b0404f]" started-at="2020-08-10T06:55:44 GMT-07:00" name="entervehicleInformation" finished-at="2020-08-10T06:55:45 GMT-07:00" duration-ms="1394" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- entervehicleInformation -->
+        <test-method signature="enterPersonalInformation()[pri:3, instance:com.atmecs.insurencedemo.tests.PurchaseQuote@12b0404f]" started-at="2020-08-10T06:55:56 GMT-07:00" name="enterPersonalInformation" finished-at="2020-08-10T06:56:10 GMT-07:00" duration-ms="14272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterPersonalInformation -->
+        <test-method signature="enterAutomobileInformation()[pri:4, instance:com.atmecs.insurencedemo.tests.PurchaseQuote@12b0404f]" started-at="2020-08-10T06:56:10 GMT-07:00" name="enterAutomobileInformation" finished-at="2020-08-10T06:56:15 GMT-07:00" duration-ms="5014" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterAutomobileInformation -->
+        <test-method signature="validInfo()[pri:5, instance:com.atmecs.insurencedemo.tests.PurchaseQuote@12b0404f]" started-at="2020-08-10T06:56:25 GMT-07:00" name="validInfo" finished-at="2020-08-10T06:56:25 GMT-07:00" duration-ms="301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validInfo -->
+      </class> <!-- com.atmecs.insurencedemo.tests.PurchaseQuote -->
+      <class name="com.atmecs.insurencedemo.tests.WindowHandles">
+        <test-method signature="navigateToWebservice()[pri:1, instance:com.atmecs.insurencedemo.tests.WindowHandles@769e7ee8]" started-at="2020-08-10T06:55:41 GMT-07:00" name="navigateToWebservice" finished-at="2020-08-10T06:55:43 GMT-07:00" duration-ms="1220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToWebservice -->
+        <test-method signature="openMultipleWindow()[pri:2, instance:com.atmecs.insurencedemo.tests.WindowHandles@769e7ee8]" started-at="2020-08-10T06:55:45 GMT-07:00" name="openMultipleWindow" finished-at="2020-08-10T06:55:56 GMT-07:00" duration-ms="10311" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='WSDL1.1']"}
+  (Session info: chrome=84.0.4147.105)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LENOVO', ip: '192.168.43.135', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:5989}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 598c2fb222e8182a3b38592395e4da9f
+*** Element info: {Using=xpath, value=//a[text()='WSDL1.1']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='WSDL1.1']"}
+  (Session info: chrome=84.0.4147.105)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LENOVO', ip: '192.168.43.135', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:5989}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 598c2fb222e8182a3b38592395e4da9f
+*** Element info: {Using=xpath, value=//a[text()='WSDL1.1']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.atmecs.insurencedemo.helpers.CommonHelpers.clickElement(CommonHelpers.java:14)
+at com.atmecs.insurencedemo.pages.WindowHandler.switchToLinks(WindowHandler.java:28)
+at com.atmecs.insurencedemo.tests.WindowHandles.openMultipleWindow(WindowHandles.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:830)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openMultipleWindow -->
+        <test-method signature="getParentWindow()[pri:3, instance:com.atmecs.insurencedemo.tests.WindowHandles@769e7ee8]" started-at="2020-08-10T06:56:10 GMT-07:00" name="getParentWindow" finished-at="2020-08-10T06:56:10 GMT-07:00" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getParentWindow -->
+        <test-method signature="openMultipleWindow1()[pri:4, instance:com.atmecs.insurencedemo.tests.WindowHandles@769e7ee8]" started-at="2020-08-10T06:56:15 GMT-07:00" name="openMultipleWindow1" finished-at="2020-08-10T06:56:25 GMT-07:00" duration-ms="10054" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='WSDL2.0']"}
+  (Session info: chrome=84.0.4147.105)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LENOVO', ip: '192.168.43.135', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:5989}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 598c2fb222e8182a3b38592395e4da9f
+*** Element info: {Using=xpath, value=//a[text()='WSDL2.0']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='WSDL2.0']"}
+  (Session info: chrome=84.0.4147.105)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LENOVO', ip: '192.168.43.135', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\ELCOT\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:5989}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 598c2fb222e8182a3b38592395e4da9f
+*** Element info: {Using=xpath, value=//a[text()='WSDL2.0']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.atmecs.insurencedemo.helpers.CommonHelpers.clickElement(CommonHelpers.java:14)
+at com.atmecs.insurencedemo.pages.WindowHandler.switchToLinks(WindowHandler.java:28)
+at com.atmecs.insurencedemo.tests.WindowHandles.openMultipleWindow1(WindowHandles.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:830)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openMultipleWindow1 -->
+      </class> <!-- com.atmecs.insurencedemo.tests.WindowHandles -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
