@@ -1,0 +1,52 @@
+What is Data class:
+A data class is a regular Python class deal specifically with the data and its representation.
+
+
+why we need to go for data class
+we don't have to write code to get proper initialization, representation, and comparisons for objects
+data class implementing following methods
+ __init__ --> instantiate variables
+ __repr__ --> string representation of an object  class name(variables=value)
+ __eq__   -->   Both instances in the comparison identical type
+ 
+By default Data Classes will add the __init__() and __repr__() to user-defined classes
+
+How to implement Data class
+using @dataclass decorator
+syntax --> variable name: type
+
+Adding default values to dataclass
+
+number: int = 10
+
+Frozen instances
+@dataclass(frozen=True) -->immutable Python objects
+@dataclass(frozen=False) -->mutable Python objects
+
+
+Type Hints
+variable: type -->type hint is mandatory
+name:str 
+
+marks:Any  -->if you do not want to add explicit types to your data class, use typing.Any:
+
+Inheritance
+To use base class fiels in sub class
+
+if a field in a base class has a default value, then all new fields added in a subclass must have default values as well.
+
+Optimizing Data Classes
+used to make classes faster and use less memory
+data classes use something called a default_factory to handle mutable default values.
+field() specifier is used to customize each field of a data class individually
+
+
+
+
+lat: float = field(default=0.0, repr=False).
+
+
+
+You have skipped the setup of an admin user.
+
+To log in, use the username: "admin" and the administrator password you used to access the setup wizard.
